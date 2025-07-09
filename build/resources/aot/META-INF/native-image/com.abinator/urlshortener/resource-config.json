@@ -5,6 +5,21 @@
         "pattern": "\\Q\/\\E"
       },
       {
+        "pattern": "\\Qcom\/abinator\/urlshortener\/config\/SecurityConfig.class\\E"
+      },
+      {
+        "pattern": "\\Qcom\\E"
+      },
+      {
+        "pattern": "\\Qcom\/abinator\\E"
+      },
+      {
+        "pattern": "\\Qcom\/abinator\/urlshortener\\E"
+      },
+      {
+        "pattern": "\\Qcom\/abinator\/urlshortener\/config\\E"
+      },
+      {
         "pattern": "\\Qorg\/springframework\/http\/mime.types\\E"
       },
       {
@@ -30,6 +45,24 @@
       },
       {
         "pattern": "\\Qorg\/springframework\/web\/util\\E"
+      },
+      {
+        "pattern": "\\Qorg\/springframework\/security\/core\/userdetails\/jdbc\/users.ddl\\E"
+      },
+      {
+        "pattern": "\\Qorg\/springframework\/security\\E"
+      },
+      {
+        "pattern": "\\Qorg\/springframework\/security\/core\\E"
+      },
+      {
+        "pattern": "\\Qorg\/springframework\/security\/core\/userdetails\\E"
+      },
+      {
+        "pattern": "\\Qorg\/springframework\/security\/core\/userdetails\/jdbc\\E"
+      },
+      {
+        "pattern": "\\Qspringdoc.config.properties\\E"
       },
       {
         "pattern": "\\Qbanner.txt\\E"
@@ -84,7 +117,21 @@
       },
       {
         "pattern": "\\QMETA-INF\\E"
+      },
+      {
+        "pattern": "\\QMETA-INF\/resources\/\\E.*"
+      },
+      {
+        "pattern": "\\QMETA-INF\/resources\\E"
       }
     ]
-  }
+  },
+  "bundles": [
+    {
+      "name": "org.springframework.security.messages"
+    },
+    {
+      "name": "sun.util.resources.LocaleNames"
+    }
+  ]
 }

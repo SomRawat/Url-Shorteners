@@ -1,7 +1,8 @@
 package com.abinator.urlshortener.controller;
 
+import com.abinator.urlshortener.services.manager.UrlManager;
+import org.springframework.beans.factory.aot.BeanInstanceSupplier;
 import org.springframework.beans.factory.config.BeanDefinition;
-import org.springframework.beans.factory.support.InstanceSupplier;
 import org.springframework.beans.factory.support.RootBeanDefinition;
 
 /**
@@ -9,13 +10,19 @@ import org.springframework.beans.factory.support.RootBeanDefinition;
  */
 public class UrlController__BeanDefinitions {
   /**
+   * Get the bean instance supplier for 'urlController'.
+   */
+  private static BeanInstanceSupplier<UrlController> getUrlControllerInstanceSupplier() {
+    return BeanInstanceSupplier.<UrlController>forConstructor(UrlManager.class)
+            .withGenerator((registeredBean, args) -> new UrlController(args.get(0)));
+  }
+
+  /**
    * Get the bean definition for 'urlController'.
    */
   public static BeanDefinition getUrlControllerBeanDefinition() {
     RootBeanDefinition beanDefinition = new RootBeanDefinition(UrlController.class);
-    InstanceSupplier<UrlController> instanceSupplier = InstanceSupplier.using(UrlController::new);
-    instanceSupplier = instanceSupplier.andThen(UrlController__Autowiring::apply);
-    beanDefinition.setInstanceSupplier(instanceSupplier);
+    beanDefinition.setInstanceSupplier(getUrlControllerInstanceSupplier());
     return beanDefinition;
   }
 }
