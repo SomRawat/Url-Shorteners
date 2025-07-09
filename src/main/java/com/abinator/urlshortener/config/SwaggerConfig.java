@@ -20,6 +20,6 @@ public class SwaggerConfig {
                 .description("A Redis-powered microservice for URL shortening with TTL, collision detection, and analytics")
                 .contact(new Contact()
                     .name("URL Shortener Team")
-                    .email("support@urlshortener.com")));
+                    .email("somrawat007@gmail.com")));
     }
 }
